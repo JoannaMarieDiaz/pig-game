@@ -1,0 +1,299 @@
+@import 'config';
+@import 'responsive';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  position: absolute;
+  top: 48%;
+  left: 16%;
+  z-index: 5;
+  font-family: Coronet Script SSi;
+  font-size: 6rem;
+  padding: $padding;
+  color: $pigColor;
+  text-shadow: $shadow;
+}
+
+.cute-pig {
+  position: absolute;
+  width: 120px;
+  top: 15%;
+  left: 37%;
+}
+
+.divWinGame {
+  position: absolute;
+  background: rgba(69, 80, 67, 0.521);
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+}
+
+.popUp {
+  position: absolute;
+  font-size: 1.8rem;
+  font-weight: 300;
+  width: 55%;
+  height: 12%;
+  top: 28%;
+  left: 23%;
+  background: $pigColor;
+  border: rgb(151, 38, 113);
+  box-shadow: $shadow;
+  border-radius: 5px;
+  z-index: 5;
+  text-align: center;
+  padding: $padding;
+}
+
+.active {
+  background: rgba(163, 243, 43, 0.774);
+}
+
+.back {
+  position: absolute;
+  background: url('../img/background.jpg') center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(69, 80, 67);
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+}
+
+main {
+  // border: 1px solid white;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  width: 90vw;
+  height: 100vh;
+}
+
+.inputWinScore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: $margin;
+  padding: $padding;
+  // border: 1px solid white;
+  position: absolute;
+  left: 165px;
+  top: 60%;
+
+  &-btn {
+    width: 80px;
+    height: 50px;
+    box-shadow: $shadow;
+    padding: $padding;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    background: rgb(95, 236, 255);
+    border: rgb(49, 103, 110);
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 5px;
+    top: 30%;
+  }
+  &-btn:hover {
+    cursor: pointer;
+    background-color: rgba(43, 206, 228, 0.767);
+  }
+
+  &-btn:active {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  &-btn:focus {
+    outline: none;
+  }
+
+  &-input {
+    height: 60px;
+    width: 80px;
+    border: none;
+    box-shadow: $shadow;
+    background: none;
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    border-radius: 8px;
+  }
+  &-input:focus {
+    outline: none;
+  }
+}
+
+.target {
+  font-size: 1.2rem;
+  margin-bottom: 3px;
+}
+
+.player {
+  position: relative;
+  text-align: center;
+  width: 150px;
+  height: 90%;
+  // border: 1px solid black;
+  top: 5%;
+  margin: 0;
+
+  &--0 {
+    left: 2%;
+    position: absolute;
+  }
+
+  &--1 {
+    right: 2%;
+    position: absolute;
+  }
+}
+
+.current {
+  color: #000;
+  position: absolute;
+  // border: 1px solid white;
+  box-shadow: $shadow;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin: $margin;
+  padding: $padding;
+  top: 20%;
+  border-radius: 8px;
+
+  &-score {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+}
+
+.name--0,
+.name--1 {
+  position: absolute;
+  // border: 1px solid white;
+  top: 50%;
+  width: 125px;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: 100;
+  margin: $margin;
+  padding: $padding;
+}
+
+.main-score {
+  box-shadow: $shadow;
+  position: absolute;
+  top: 58%;
+  margin: $margin;
+  padding: $padding;
+  font-size: 1.3rem;
+  border-radius: 8px;
+
+  &--1,
+  &--0 {
+    font-weight: 300;
+    text-shadow: #fff;
+  }
+}
+
+.score {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.pig-img {
+  position: absolute;
+  width: 130px;
+  z-index: 2;
+  left: 5%;
+}
+
+.trunk {
+  position: absolute;
+  width: 170px;
+  top: 150%;
+  z-index: 1;
+  left: -10%;
+}
+
+.dice {
+  // border: 1px solid black;
+  position: absolute;
+  width: 200px;
+  padding: $padding;
+  text-align: center;
+  top: 15%;
+  left: 25%;
+
+  &--img {
+    box-shadow: $shadow;
+    top: 20%;
+    // border: 1px solid white;
+    margin: $margin;
+    padding: 1px;
+    width: 48%;
+  }
+}
+
+.btn {
+  font-size: 1.1rem;
+  position: absolute;
+  border: none;
+  box-shadow: $shadow;
+  height: 50px;
+  margin: 10px;
+  padding: $padding;
+  border-radius: 8px;
+  display: inline-block;
+  background: $primary-color;
+
+  &--new {
+    top: 2%;
+    left: 30%;
+    width: 140px;
+    z-index: 5;
+    background: rgb(95, 236, 255);
+    border: rgb(49, 103, 110);
+  }
+
+  &--roll {
+    left: 30%;
+    top: 42%;
+    width: 60px;
+  }
+
+  &--hold {
+    right: 32%;
+    top: 42%;
+    width: 60px;
+  }
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgba(43, 206, 228, 0.767);
+}
+
+.btn:active {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}

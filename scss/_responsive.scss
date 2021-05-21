@@ -1,0 +1,46 @@
+@media screen and (min-width: 700px) {
+  h1 {
+    left: 35% !important;
+  }
+  main {
+    max-width: 85vh;
+    left: 7%;
+  }
+
+  .popUp {
+    font-size: 2.5rem !important;
+    width: 40% !important;
+    left: 30% !important;
+  }
+
+  .cute-pig {
+    left: 45% !important;
+  }
+
+  .inputWinScore {
+    left: 38% !important;
+  }
+
+  .dice {
+    left: 27% !important;
+  }
+
+  .player img {
+    .pig-img {
+      max-width: 160px;
+      left: 0%;
+    }
+  }
+
+  .btn {
+    &--new {
+      max-width: 150px;
+      left: 30% !important;
+    }
+
+    &--roll,
+    &--hold {
+      max-width: 100px;
+    }
+  }
+}

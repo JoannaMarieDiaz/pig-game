@@ -1,0 +1,344 @@
+@media screen and (min-width: 700px) {
+  h1 {
+    left: 35% !important;
+  }
+  main {
+    max-width: 85vh;
+    left: 7%;
+  }
+  .popUp {
+    font-size: 2.5rem !important;
+    width: 40% !important;
+    left: 30% !important;
+  }
+  .cute-pig {
+    left: 45% !important;
+  }
+  .inputWinScore {
+    left: 38% !important;
+  }
+  .dice {
+    left: 27% !important;
+  }
+  .player img .pig-img {
+    max-width: 160px;
+    left: 0%;
+  }
+  .btn--new {
+    max-width: 150px;
+    left: 30% !important;
+  }
+  .btn--roll, .btn--hold {
+    max-width: 100px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  position: absolute;
+  top: 48%;
+  left: 16%;
+  z-index: 5;
+  font-family: Coronet Script SSi;
+  font-size: 6rem;
+  padding: 0.3em;
+  color: #d18b8c;
+  text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cute-pig {
+  position: absolute;
+  width: 120px;
+  top: 15%;
+  left: 37%;
+}
+
+.divWinGame {
+  position: absolute;
+  background: rgba(69, 80, 67, 0.521);
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+}
+
+.popUp {
+  position: absolute;
+  font-size: 1.8rem;
+  font-weight: 300;
+  width: 55%;
+  height: 12%;
+  top: 28%;
+  left: 23%;
+  background: #d18b8c;
+  border: #972671;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  z-index: 5;
+  text-align: center;
+  padding: 0.3em;
+}
+
+.active {
+  background: rgba(163, 243, 43, 0.774);
+}
+
+.back {
+  position: absolute;
+  background: url("../img/background.jpg") center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #455043;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+}
+
+main {
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  width: 90vw;
+  height: 100vh;
+}
+
+.inputWinScore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: 0.3em;
+  padding: 0.3em;
+  position: absolute;
+  left: 165px;
+  top: 60%;
+}
+
+.inputWinScore-btn {
+  width: 80px;
+  height: 50px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+  padding: 0.3em;
+  border-radius: 5px;
+  border: none;
+  display: inline-block;
+  background: #5fecff;
+  border: #31676e;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 5px;
+  top: 30%;
+}
+
+.inputWinScore-btn:hover {
+  cursor: pointer;
+  background-color: rgba(43, 206, 228, 0.767);
+}
+
+.inputWinScore-btn:active {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inputWinScore-btn:focus {
+  outline: none;
+}
+
+.inputWinScore-input {
+  height: 60px;
+  width: 80px;
+  border: none;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+  background: none;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.inputWinScore-input:focus {
+  outline: none;
+}
+
+.target {
+  font-size: 1.2rem;
+  margin-bottom: 3px;
+}
+
+.player {
+  position: relative;
+  text-align: center;
+  width: 150px;
+  height: 90%;
+  top: 5%;
+  margin: 0;
+}
+
+.player--0 {
+  left: 2%;
+  position: absolute;
+}
+
+.player--1 {
+  right: 2%;
+  position: absolute;
+}
+
+.current {
+  color: #000;
+  position: absolute;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin: 0.3em;
+  padding: 0.3em;
+  top: 20%;
+  border-radius: 8px;
+}
+
+.current-score {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.name--0,
+.name--1 {
+  position: absolute;
+  top: 50%;
+  width: 125px;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: 100;
+  margin: 0.3em;
+  padding: 0.3em;
+}
+
+.main-score {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  top: 58%;
+  margin: 0.3em;
+  padding: 0.3em;
+  font-size: 1.3rem;
+  border-radius: 8px;
+}
+
+.main-score--1, .main-score--0 {
+  font-weight: 300;
+  text-shadow: #fff;
+}
+
+.score {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.pig-img {
+  position: absolute;
+  width: 130px;
+  z-index: 2;
+  left: 5%;
+}
+
+.trunk {
+  position: absolute;
+  width: 170px;
+  top: 150%;
+  z-index: 1;
+  left: -10%;
+}
+
+.dice {
+  position: absolute;
+  width: 200px;
+  padding: 0.3em;
+  text-align: center;
+  top: 15%;
+  left: 25%;
+}
+
+.dice--img {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+  top: 20%;
+  margin: 0.3em;
+  padding: 1px;
+  width: 48%;
+}
+
+.btn {
+  font-size: 1.1rem;
+  position: absolute;
+  border: none;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
+  height: 50px;
+  margin: 10px;
+  padding: 0.3em;
+  border-radius: 8px;
+  display: inline-block;
+  background: rgba(95, 236, 255, 0.288);
+}
+
+.btn--new {
+  top: 2%;
+  left: 30%;
+  width: 140px;
+  z-index: 5;
+  background: #5fecff;
+  border: #31676e;
+}
+
+.btn--roll {
+  left: 30%;
+  top: 42%;
+  width: 60px;
+}
+
+.btn--hold {
+  right: 32%;
+  top: 42%;
+  width: 60px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgba(43, 206, 228, 0.767);
+}
+
+.btn:active {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */
