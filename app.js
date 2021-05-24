@@ -25,12 +25,12 @@ const score = [0, 0];
 let winGame = false;
 
 // Sound
-const startgame = './sound/startgame.wav';
-const rolldice = './sound/rolldice.wav';
-const holdsound = './sound/holdsound.wav';
-const enterScore = './sound/enterscore.wav';
-const gameover = './sound/gameover.wav';
-const rollone = './sound/number1roll.wav';
+const startgame = './dist/sound/startgame.wav';
+const rolldice = './dist/sound/rolldice.wav';
+const holdsound = './dist/sound/holdsound.wav';
+const enterScore = './dist/sound/enterscore.wav';
+const gameover = './dist/sound/gameover.wav';
+const rollone = './dist/sound/number1roll.wav';
 
 function playAudio(audio) {
   const soundEffect = new Audio(audio);
@@ -85,7 +85,7 @@ btnRoll.addEventListener('click', function () {
 
     // Display dice
     diceEl.classList.remove('hidden');
-    diceEl.src = `./img/dice-${dice}.png`;
+    diceEl.src = `./dist/img/dice-${dice}.png`;
 
     // Check if dice is 1
     if (dice !== 1) {
